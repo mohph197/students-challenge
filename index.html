@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TEST</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<h1>Recherche Etudiant</h1>
+		<form onsubmit="return false;">
+			<fieldset>
+				<legend>Filtre:</legend>
+				<div>
+					<label for="f-nom">Nom: </label>
+					<input type="text" id="f-nom" name="nom" />
+				</div>
+				<div>
+					<label for="f-prenom">Prénom: </label>
+					<input type="text" id="f-prenom" name="prenom" />
+				</div>
+				<div>
+					<label for="f-superieur">Supérieur à: </label>
+					<input type="number" name="superieur" id="f-superieur" />
+				</div>
+				<button id="search" onclick="searchStudent()">Rechercher</button>
+				<button id="delete" onclick="deleteStudent()">Supprimer</button>
+			</fieldset>
+		</form>
+		<div id="results">
+			<h2>Etudiants insérés</h2>
+			<div id="students">
+				<div class="student">
+					<p class="name">JOHNE DOE</p>
+					<p class="note">15</p>
+				</div>
+				<div class="student">
+					<p class="name">ROSIE WOOD</p>
+					<p class="note">9</p>
+				</div>
+				<div class="student">
+					<p class="name">BOB CARL</p>
+					<p class="note">10</p>
+				</div>
+				<div class="student">
+					<p class="name">SARAH FOX</p>
+					<p class="note">13</p>
+				</div>
+				<div class="student">
+					<p class="name">JACK LEE</p>
+					<p class="note">5</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
