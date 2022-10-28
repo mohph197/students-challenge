@@ -88,3 +88,10 @@ h2 {
 p {
     margin: 0;
 }
+
+.selected .name {
+    background-color: green;
+}
+.selected .note {
+    background-color: rgb(5, 179, 5);
+}
